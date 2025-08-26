@@ -1,0 +1,482 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2a3b4d;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #479de3;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #479de3;
+}
+
+.nav-logo i {
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: #2a3b4d;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #479de3;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #2a3b4d;
+    transition: all 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    color: #2a3b4d;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Buttons */
+.btn-primary, .btn-secondary {
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #479de3;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #3a8bc7;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #479de3;
+    border: 2px solid #479de3;
+}
+
+.btn-secondary:hover {
+    background-color: #f0f8ff;
+    transform: translateY(-2px);
+}
+
+/* Features Section */
+.features {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #e7feff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.feature-icon i {
+    font-size: 2rem;
+    color: #479de3;
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+/* Preventive Care Section */
+.preventive-care {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.preventive-care h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+
+.preventive-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.preventive-info {
+    flex: 1;
+}
+
+.preventive-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.preventive-info ul {
+    margin: 20px 0;
+}
+
+.preventive-info li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.preventive-info li i {
+    color: #479de3;
+    margin-right: 10px;
+}
+
+.preventive-image {
+    flex: 1;
+    text-align: center;
+}
+
+.preventive-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Telemedicine Section */
+.telemedicine {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.telemedicine h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+
+.telemedicine-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.telemedicine-image {
+    flex: 1;
+    text-align: center;
+}
+
+.telemedicine-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.telemedicine-info {
+    flex: 1;
+}
+
+.telemedicine-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.telemedicine-info ul {
+    margin: 20px 0;
+}
+
+.telemedicine-info li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.telemedicine-info li i {
+    color: #479de3;
+    margin-right: 10px;
+}
+
+.appointment-form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+}
+
+.appointment-form h4 {
+    margin-bottom: 20px;
+}
+
+.appointment-form input,
+.appointment-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Footer */
+footer {
+    background-color: #2a3b4d;
+    color: #fff;
+    padding: 50px 0 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    color: #ccc;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-section ul li i {
+    margin-right: 10px;
+    color: #479de3;
+}
+
+.footer-section a {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #479de3;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #3a4a5c;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #479de3;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #3a4a5c;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .preventive-content,
+    .telemedicine-content {
+        flex-direction: column;
+    }
+
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+}
